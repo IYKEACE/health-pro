@@ -1,4 +1,7 @@
 /* appoinment start */
+.appointment-container{
+  margin-top: 20rem;
+}
 .appointment-container h2 {
   margin-top: 0;
   margin-bottom: 0;
@@ -7,6 +10,9 @@
   margin-bottom: 3rem;
   font-size: 50px;
   color: #9e9e9e;
+}
+form{
+  width: 100%;
 }
 .form-head-btn-1 {
   background: linear-gradient(68.08deg, #9083d5 9.64%, #807593 92.49%);
@@ -86,7 +92,7 @@
   height: 2.5rem;
   border-radius: 0.5rem;
 }
-.form {
+.formula {
   margin-left: 5rem;
   /* margin-top: 1rem; */
   margin-bottom: 0.9rem;
@@ -150,19 +156,30 @@
   margin-left: 5rem;
   justify-content: center;
 }
-.Address {
+.address {
   border: 4px solid #9e9e9e;
   height: 15rem;
   justify-content: center;
-  width: 54%;
   border-radius: 0.5rem;
   margin-bottom: 0.3rem;
-  object-fit: contain;
+  width: inherit;
 }
 .submit {
   margin-left: 40rem;
   margin-top: 10px;
 }
+.submit {
+  background: linear-gradient(68.08deg, #9083d5 9.64%, #807593 92.49%);
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 25px;
+  border-radius: 10px;
+  justify-content: center;
+  width: 150px;
+  cursor: pointer;
+} 
 /* appoinment end */
 /* lines */
 .lines {
