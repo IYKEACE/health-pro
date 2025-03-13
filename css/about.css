@@ -1,4 +1,7 @@
 /* biography style start */
+.appoint-container{
+  margin-top: 19rem;
+}
 .appoint-content {
   display: flex;
   /* justify-content: space-between; */
@@ -18,14 +21,14 @@
 }
 .wow {
   margin-bottom: 1rem;
-  font-size: 15px;
+  font-size: 20px;
 }
 .mid {
   margin-bottom: 1rem;
-  font-size: 15px;
+  font-size: 20px;
 }
 .pra {
   margin-bottom: 1rem;
-  font-size: 15px;
+  font-size: 20px;
 }
 /* biography style end */
