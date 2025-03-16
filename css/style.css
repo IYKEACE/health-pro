@@ -63,8 +63,8 @@ nav {
   align-items: center;
 }
 .logo {
-  width: 100px;
-  height: 90px;
+  width: 140px;
+  height: 120px;
   cursor: pointer;
 }
 .lists {
@@ -222,10 +222,10 @@ nav {
   margin-bottom: 1rem;
   font-size: 15px;
 }
-.wow {
+/* .wow {
   margin-bottom: 1rem;
   font-size: 20px;
-}
+} */
 .mid {
   margin-bottom: 1rem;
   font-size: 20px;
@@ -247,10 +247,13 @@ nav {
   color: #ffffff;
   cursor: pointer;
 }
+.hit {
+  font-weight: bold;
+  font-size: 20px;
+}
 /* biography style end */
 
 /* service style start */
-/* Service Styles*/
 .service-content {
   display: flex;
   align-items: center;
@@ -324,38 +327,7 @@ h2 {
   width: 350px;
   border-radius: 5rem;
 }
-/* Service Styles*/
-/* .serve {
-  text-align: center;
-  font-size: 30px;
-}
-h2 {
-  margin-top: 4rem;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 3rem;
-}
-.med {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6rem;
-}
-.pat {
-  box-shadow: -1px 23px 63px 0px #9083d559;
-  margin-bottom: 2rem;
-  border-radius: 2rem;
-}
-.mage {
-  width: 250px;
-  border-radius: 3rem;
-}
-.lol {
-  text-align: center;
-  cursor: pointer;
-} */
-/* service style end */
-
+/* service end */
 /* doctor style start */
 .doctor-container {
   margin-top: 10rem;
@@ -366,33 +338,37 @@ h2 {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* justify-content: space-evenly; */
-  /* justify-content: center; */
   align-items: center;
   align-content: center;
 }
 .doctor-img {
-  width: 54%;
-  border-radius: 37rem;
+  width: 40%;
+  border-radius: 40rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 .doc-title {
   font-size: 14px;
+  gap: 1rem;
+  margin-bottom: 0;
   line-height: 9px;
 }
 .doc-text {
-  font-size: 14px;
-  line-height: 9px;
-  margin-top: 1rem;
+  font-size: 12px;
+  margin-top: 0;
+  /* line-height: 9px;
+  margin-top: 1rem; */
 }
 .doc {
   display: flex;
-  text-align: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+.bot-context {
+  align-content: center;
+  margin: 0;
 }
 .doc-content {
-  margin-top: 2rem;
+  gap: 1rem;
 }
 /* doctor style end */
 
@@ -479,7 +455,7 @@ h2 {
   line-height: 20px;
   margin-top: 0.5rem;
 }
-.liste{
+.liste {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
