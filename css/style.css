@@ -57,10 +57,27 @@ h6 {
   margin: 0 auto;
 }
 /* navigation style start */
+header {
+  position: sticky;
+  background-color: #e5e5e5;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.home {
+  background: linear-gradient(
+    180deg,
+    #c5dcff 0%,
+    rgba(197, 220, 255, 0.5) 96.88%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  padding: 3px;
+  border-radius: 7px;
 }
 .logo {
   width: 140px;
@@ -323,9 +340,9 @@ h2 {
   text-align: center;
   cursor: pointer;
 }
-.card-image {
-  width: 350px;
-  border-radius: 5rem;
+.card-img {
+  width: 400px;
+  border-radius: 1.5rem;
 }
 /* service end */
 /* doctor style start */

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>healthPro | Loginpage</title>
+    <title>healthPro | DoctorPage</title>
     <link
       rel="shortcut icon"
       href="/images/healthPro-logo.png"
@@ -25,10 +25,9 @@
       content="This is an online platform that connects patients with doctors. Patients can book appointments with doctors and get prescriptions online."
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <!-- <link rel="stylesheet" href="js/login.js" /> -->
+    <link rel="stylesheet" href="css/doctorlogin.css" />
   </head>
-  <body id="body">
+  <body>
     <!-- navigation -->
     <header>
       <nav class="container">
@@ -57,6 +56,7 @@
 
         <section class="auth">
           <button class="log"><a href="./login.html">Sign in</a></button>
+          <button class="reg"><a href="./register.html">Register</a></button>
         </section>
       </nav>
     </header>
@@ -90,35 +90,61 @@
     </section>
     <!-- hero section -->
 
-    <!-- appoinment -->
+    <!-- appointment -->
     <section class="appointment-container container">
       <h2>Log In</h2>
-      <h3>Please Log in</h3>
+      <h3>Please Log In</h3>
       <p>
         Welcome to HealthPro! We are glad to have you here.
       </p>
       <p>Please log in to stay connected with our medical team.</p>
+      <!-- <h3>Please Sign Up To Continue</h3> -->
+      <div class="form-head-btn">
+        <button class="form-head-btn-1s">
+          <a href="register.html">Patient</a>
+        </button>
+        <button class="form-head-btn-2s">
+          <a href="doctorlogin.html">Doctor</a>
+        </button>
+        <button class="form-head-btn-3s">
+          <a href="Admin.html">Admin</a>
+        </button>
+      </div>
       <section class="appoinment-content">
         <form>
           <div class="input-wrapper">
-            <input type="text" placeholder="Enter Full name" />
+            <div class="input-wrapper">
+              <input type="text" placeholder="Staff ID" />
+            </div>
           </div>
           <div class="input-wrapper">
-            <input type="password" placeholder="Password" id="passcode" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="input-wrapper">
+            <input
+              placeholder="Password"
+              type="password"
+              id="passcode"
+            />
             <span id="fa-eye" class="fa-regular fa-eye"></span>
             <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
           </div>
           <div class="input-wrapper">
-            <input placeholder="Confirm password" type="password" id="passcode" />
+            <input
+              placeholder="Confirm password"
+              type="password"
+              id="passcode"
+            />
             <span id="fa-eye" class="fa-regular fa-eye"></span>
             <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
           </div>
+          <button class="submit">
+            <a href="doctorsignin.html">Sign in</a>
+          </button>
         </form>
-        <button class="submit">Login</button>
       </section>
     </section>
     <!-- appoinment -->
-
     <!-- contact section -->
     <section class="contact-section container" id="contact us">
       <hr class="line" />
@@ -142,7 +168,7 @@
               <a href="/appointment.html">Appointment</a>
             </li>
             <li class="link">
-              <a href="#services">Services</a>
+              <a href="#service">Service</a>
             </li>
             <li class="link">
               <a href="/aboutus.html">About us</a>
@@ -192,6 +218,6 @@
     </section>
     <!-- contact -->
 
-    <script src="js/login.js"></script>
+    <script src="js/doctor.js"></script>
   </body>
 </html>

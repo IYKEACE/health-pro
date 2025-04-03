@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>healthPro | Registerpage</title>
     <link
+      rel="shortcut icon"
+      href="/images/healthPro-logo.png"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -50,7 +55,7 @@
         </ul>
 
         <section class="auth">
-          <button class="log"><a href="./login.html">Sign in</a></button>
+          <button class="reg"><a href="./register.html">Register</a></button>
           <!-- <button class="reg">Regiser</button> -->
         </section>
       </nav>
@@ -89,14 +94,18 @@
     <section class="appointment-container container">
       <h2>Sign Up</h2>
       <h3>Please Sign Up To Continue</h3>
-      <p>
-        Lorem Ipsum simply dummy text of the printing and ype setting industry.
-      </p>
-      <p>Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+      <p>To create an account, please fill in the form below with your</p>
+      <p>personal details.This will help us to provide you with a better</p>
       <div class="form-head-btn">
-        <button class="form-head-btn-1">Patient</button>
-        <button class="form-head-btn-2">Doctor</button>
-        <button class="form-head-btn-3">Admin</button>
+        <button class="form-head-btn-1">
+          <a href="register.html">Patient</a>
+        </button>
+        <button class="form-head-btn-2">
+          <a href="doctorlogin.html">Doctor</a>
+        </button>
+        <button class="form-head-btn-3">
+          <a href="admin.html">Admin</a>
+        </button>
       </div>
       <section class="appoinment-content">
         <form>
@@ -141,20 +150,30 @@
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
-            <input
-              type="password"
-              placeholder=" Password"
-              required
-              class="date"
-            />
-            <input
-              type="password"
-              placeholder=" Confirm Password"
-              required
-              class="tim"
-            />
+            <div class="input-wrapper">
+              <input
+                placeholder="Password"
+                type="password"
+                id="passcode"
+                class="so"
+              />
+              <span id="fa-eye" class="fa-regular fa-eye"></span>
+              <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
+            </div>
+            <div class="input-wrapper">
+              <input
+                placeholder="Confirm password"
+                type="password"
+                id="passcode"
+                class="so"
+              />
+              <span id="fa-eye" class="fa-regular fa-eye"></span>
+              <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
+            </div>
           </div>
-          <button class="submit">Register</button>
+          <button class="submit">
+            <a href="login.html">Register</a>
+          </button>
         </form>
       </section>
     </section>
@@ -232,5 +251,6 @@
       </section>
     </section>
     <!-- contact -->
+    <script src="js/register.js"></script>
   </body>
 </html>

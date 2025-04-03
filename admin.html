@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>healthPro | Loginpage</title>
+    <title>healthPro | Adminpage</title>
     <link
       rel="shortcut icon"
       href="/images/healthPro-logo.png"
@@ -25,7 +25,7 @@
       content="This is an online platform that connects patients with doctors. Patients can book appointments with doctors and get prescriptions online."
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/admin.css" />
     <!-- <link rel="stylesheet" href="js/login.js" /> -->
   </head>
   <body id="body">
@@ -93,10 +93,8 @@
     <!-- appoinment -->
     <section class="appointment-container container">
       <h2>Log In</h2>
-      <h3>Please Log in</h3>
-      <p>
-        Welcome to HealthPro! We are glad to have you here.
-      </p>
+      <h3>Please Log In</h3>
+      <p>Welcome to HealthPro! We are glad to have you here.</p>
       <p>Please log in to stay connected with our medical team.</p>
       <section class="appoinment-content">
         <form>
@@ -109,12 +107,16 @@
             <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
           </div>
           <div class="input-wrapper">
-            <input placeholder="Confirm password" type="password" id="passcode" />
+            <input
+              placeholder="Confirm password"
+              type="password"
+              id="passcode"
+            />
             <span id="fa-eye" class="fa-regular fa-eye"></span>
             <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
           </div>
         </form>
-        <button class="submit">Login</button>
+        <button class="submit"><a href="dashboard.html">Login</a></button>
       </section>
     </section>
     <!-- appoinment -->
@@ -192,6 +194,6 @@
     </section>
     <!-- contact -->
 
-    <script src="js/login.js"></script>
+    <script src="js/admin.js"></script>
   </body>
 </html>
