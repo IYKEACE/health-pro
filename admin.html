@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>healthPro | Registerpage</title>
+    <title>healthPro | Adminpage</title>
     <link
       rel="shortcut icon"
       href="/images/healthPro-logo.png"
@@ -25,9 +25,10 @@
       content="This is an online platform that connects patients with doctors. Patients can book appointments with doctors and get prescriptions online."
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <!-- <link rel="stylesheet" href="js/login.js" /> -->
   </head>
-  <body>
+  <body id="body">
     <!-- navigation -->
     <header>
       <nav class="container">
@@ -55,8 +56,7 @@
         </ul>
 
         <section class="auth">
-          <button class="reg"><a href="./register.html">Register</a></button>
-          <!-- <button class="reg">Regiser</button> -->
+          <button class="log"><a href="./login.html">Sign in</a></button>
         </section>
       </nav>
     </header>
@@ -92,89 +92,31 @@
 
     <!-- appoinment -->
     <section class="appointment-container container">
-      <h2>Sign Up</h2>
-      <h3>Please Sign Up To Continue</h3>
-      <p>To create an account, please fill in the form below with your</p>
-      <p>personal details.This will help us to provide you with a better</p>
-      <div class="form-head-btn">
-        <button class="form-head-btn-1">
-          <a href="register.html">Patient</a>
-        </button>
-        <button class="form-head-btn-2">
-          <a href="doctorlogin.html">Doctor</a>
-        </button>
-        <button class="form-head-btn-3">
-          <a href="admin.html">Admin</a>
-        </button>
-      </div>
+      <h2>Log In</h2>
+      <h3>Please Log In</h3>
+      <p>Welcome to HealthPro! We are glad to have you here.</p>
+      <p>Please log in to stay connected with our medical team.</p>
       <section class="appoinment-content">
         <form>
-          <div class="form-group">
+          <div class="input-wrapper">
+            <input type="text" placeholder="Enter Full name" />
+          </div>
+          <div class="input-wrapper">
+            <input type="password" placeholder="Password" id="passcode" />
+            <span id="fa-eye" class="fa-regular fa-eye"></span>
+            <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
+          </div>
+          <div class="input-wrapper">
             <input
-              type="text"
-              placeholder=" First Name "
-              required
-              class="high"
+              placeholder="Confirm password"
+              type="password"
+              id="passcode"
             />
-            <input type="text" placeholder=" Last Name" required class="down" />
+            <span id="fa-eye" class="fa-regular fa-eye"></span>
+            <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
           </div>
-          <div class="form-groups">
-            <input type="email" placeholder=" Email" required class="mail" />
-            <input
-              type="tel"
-              placeholder=" Mobile Number"
-              required
-              class="numb"
-            />
-          </div>
-          <div class="form">
-            <input type="text" placeholder=" NIC" required class="nic" />
-            <input
-              type="date"
-              placeholder=" Date of Birth"
-              required
-              class="birth"
-            />
-          </div>
-          <div class="form-groupt">
-            <textarea
-              placeholder=" Address"
-              required
-              class="address"
-              cols="173"
-            ></textarea>
-          </div>
-          <div class="form-grouper">
-            <select required class="gen">
-              <option value="" disabled selected>Gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-            <div class="input-wrapper">
-              <input
-                placeholder="Password"
-                type="password"
-                id="passcode"
-                class="so"
-              />
-              <span id="fa-eye" class="fa-regular fa-eye"></span>
-              <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
-            </div>
-            <div class="input-wrapper">
-              <input
-                placeholder="Confirm password"
-                type="password"
-                id="passcode"
-                class="so"
-              />
-              <span id="fa-eye" class="fa-regular fa-eye"></span>
-              <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
-            </div>
-          </div>
-          <button class="submit">
-            <a href="login.html">Register</a>
-          </button>
         </form>
+        <button class="submit"><a href="dashboard.html">Login</a></button>
       </section>
     </section>
     <!-- appoinment -->
@@ -251,6 +193,7 @@
       </section>
     </section>
     <!-- contact -->
-    <script src="js/register.js"></script>
+
+    <script src="js/admin.js"></script>
   </body>
 </html>

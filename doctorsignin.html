@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>healthPro | Registerpage</title>
+    <title>healthPro |Doctorsigninpage</title>
     <link
       rel="shortcut icon"
       href="/images/healthPro-logo.png"
@@ -25,7 +25,7 @@
       content="This is an online platform that connects patients with doctors. Patients can book appointments with doctors and get prescriptions online."
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/doctorsignup.css" />
   </head>
   <body>
     <!-- navigation -->
@@ -93,45 +93,64 @@
     <!-- appoinment -->
     <section class="appointment-container container">
       <h2>Sign Up</h2>
-      <h3>Please Sign Up To Continue</h3>
+      <h3>Please Sign Up</h3>
       <p>To create an account, please fill in the form below with your</p>
       <p>personal details.This will help us to provide you with a better</p>
       <div class="form-head-btn">
-        <button class="form-head-btn-1">
+        <button class="form-head-btn-1s">
           <a href="register.html">Patient</a>
         </button>
-        <button class="form-head-btn-2">
+        <button class="form-head-btn-2s">
           <a href="doctorlogin.html">Doctor</a>
         </button>
-        <button class="form-head-btn-3">
-          <a href="admin.html">Admin</a>
+        <button class="form-head-btn-3s">
+          <a href="login.html">Admin</a>
         </button>
       </div>
       <section class="appoinment-content">
         <form>
-          <div class="form-group">
+          <div class="form-groups">
             <input
               type="text"
-              placeholder=" First Name "
+              placeholder=" First Name"
               required
-              class="high"
+              class="mail"
             />
-            <input type="text" placeholder=" Last Name" required class="down" />
+            <input type="text" placeholder=" Last Name" required class="numb" />
           </div>
-          <div class="form-groups">
-            <input type="email" placeholder=" Email" required class="mail" />
+          <div class="form">
+            <input type="mail" placeholder=" Email" required class="nic" />
             <input
-              type="tel"
+              type="tell"
               placeholder=" Mobile Number"
               required
-              class="numb"
+              class="birth"
             />
           </div>
           <div class="form">
-            <input type="text" placeholder=" NIC" required class="nic" />
             <input
-              type="date"
-              placeholder=" Date of Birth"
+              type="text"
+              placeholder=" Medical School Attended"
+              required
+              class="nic"
+            />
+            <input
+              type="twxt"
+              placeholder=" Years Of Experience"
+              required
+              class="birth"
+            />
+          </div>
+          <div class="form">
+            <input
+              type="text"
+              placeholder=" Medical License Number"
+              required
+              class="nic"
+            />
+            <input
+              type="test"
+              placeholder=" Specialization"
               required
               class="birth"
             />
@@ -171,9 +190,7 @@
               <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
             </div>
           </div>
-          <button class="submit">
-            <a href="login.html">Register</a>
-          </button>
+          <button class="submit">Register</button>
         </form>
       </section>
     </section>

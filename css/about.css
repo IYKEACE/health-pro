@@ -2,6 +2,9 @@
 .appoint-container{
   margin-top: 19rem;
 }
+.homepage-img1{
+  width: 900px;
+}
 .appoint-content {
   display: flex;
   /* justify-content: space-between; */

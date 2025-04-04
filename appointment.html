@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>healthPro | AppointmentPage</title>
     <link
+      rel="shortcut icon"
+      href="/images/healthPro-logo.png"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -35,17 +40,17 @@
           <li class="list">
             <a href="/">Home</a>
           </li>
-          <li class="list">
+          <li class="home">
             <a href="/appointment.html">Appointment</a>
           </li>
           <li class="list">
-            <a href="/service.html">service</a>
+            <a href="/">service</a>
           </li>
           <li class="list">
             <a href="/aboutus.html">About us</a>
           </li>
           <li class="list">
-            <a href="/contactus.html">Contact us</a>
+            <a href="#contact us">Contact us</a>
           </li>
         </ul>
 
@@ -65,15 +70,15 @@
           <h2 class="home-yaw">Online</h2>
         </h2>
         <p class="homepage-hero-text">
-          Lorèm Media is a full-service social media agency. We offer
+          Book your doctor's appointment online with HealthPro!
           <br />
-          businesses innovative solutions That deliver the right type of
+          Your online gateway to book appointments with trusted
           <br />
-          audience to you in the most effective strategies possible.
+          doctors and healthcare specialists We make healthcare
           <br />
-          We strive to develop a community around your business,
+          accessible and convenient, connecting you with top
           <br />
-          polishing your branding, and improving your public relations.
+          medical professionals at a time that suits you.
         </p>
       </section>
       <section class="right-homepage-hero-container">
@@ -145,22 +150,38 @@
               <option value="" disabled selected>Department Name</option>
               <option value="Cardiology">Cardiology</option>
               <option value="Neurology">Neurology</option>
-              <option value="Orthopedics">Orthopedics</option>
+              <option value="Pediatrics">Pediatrics</option>
+              <option value="psychiatry">psychiatry</option>
+              <option value="Radiology">radiology</option>
+              <option value="Dermatology">Dermatology</option>
+              <option value="Oncology">Oncology</option>
+              <option value="Urology">Urology</option>
+              <option value="hematology">hematology</option>
+              <option value="Pulmonology">Pulmonology</option>
+              <option value="Gynecology">Gynecology</option>
             </select>
-            <input
-              type="text"
-              placeholder="  Doctor Name"
-              required
-              class="birth"
-            />
+            <select required class="birth">
+              <option value="" disabled selected>Doctors Name</option>
+              <option value="dr. david ace">DR. DAVID ACE</option>
+              <option value="dr. liam chan">DR.LIAM CHAN</option>
+              <option value="dr. nelson lee">DR.NELSON LEE</option>
+              <option value="dr. aliyah rae">DR.ALIYAH RAE</option>
+              <option value="dr. ikechukwu dave">DR.IKECHUKWU DAVE</option>
+              <option value="dr. mubarak ahmed">DR.MUBARAK AHMED</option>
+              <option value="dr. fathia reyes">DR.FATHIA REYES</option>
+              <option value="dr. ava brooks">AVA BROOKS</option>
+              <option value="dr. ali mohammed">DR.ALI MOHAMMED</option>
+              <option value="dr. sharon styles">DR.SHARON STYLES</option>
+              <option value="dr. miller hernandez">DR.MILLER HERNANDEZ</option>
+            </select>
           </div>
           <div class="form-groupt">
             <textarea
               placeholder=" Address"
               required
               class="address"
-              cols="162"
-              rows="20"
+              cols="173"
+              rows="0"
             ></textarea>
           </div>
           <button class="submit">Register</button>
@@ -191,7 +212,7 @@
               <a href="/appointment.html">Appointment</a>
             </li>
             <li class="link">
-              <a href="#services">Services</a>
+              <a href="#service">Service</a>
             </li>
             <li class="link">
               <a href="/aboutus.html">About us</a>
